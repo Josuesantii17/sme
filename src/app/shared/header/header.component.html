@@ -1,0 +1,56 @@
+<div id="ht-preloader">
+    <div class="clear-loader d-flex align-items-center justify-content-center">
+        <div class="loader">
+            <span class="plus"></span>
+            <span class="plus"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</div>
+
+<header id="site-header" class="header">
+    <div id="header-wrap">
+        <div class="container-fluid px-lg-8">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand logo" routerLink="">
+                            <img id="logo-img" class="img-fluid" src="assets/images/logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation"> <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto me-auto position-relative">
+                                <!-- Home -->
+                                <li class="nav-item dropdown"> 
+                                    <a class="nav-link dropdown-toggle" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" data-bs-toggle="dropdown">Menu</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="index.html">Homepage One</a></li>
+                                        <li><a href="index-2.html">Homepage Two</a></li>
+                                        <li><a href="index-3.html">Homepage Three</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown"> 
+                                    <a class="nav-link" href="#">Consulta tus resultados</a>
+                                </li>
+                                <li class="nav-item dropdown"> 
+                                    <a class="nav-link" href="#">Agenda tu cita</a>
+                                </li>
+                                <li class="nav-item dropdown"> 
+                                    <a class="nav-link" routerLink="contact" routerLinkActive="active">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

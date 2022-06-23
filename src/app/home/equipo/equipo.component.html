@@ -1,0 +1,23 @@
+<div class="row">
+    <div *ngFor="let persona of equipo" class="col-sm-6 mt-5">
+        <div class="team-member">
+            <div class="team-images">
+                <img class="img-fluid" [src]="persona.imagen" alt="">
+            </div>
+            <div class="team-description">
+                <h5><a href="team-single.html">{{ persona.nombre }}</a></h5>
+                <span>{{ persona.cargo }}</span>
+            </div>
+            <ul class="team-social-icon list-inline">
+                <li><a href="#"><i class="lab la-facebook-f"></i></a>
+                </li>
+                <li><a href="#"><i class="lab la-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="lab la-pinterest-p"></i></a>
+                </li>
+                <li><a href="#"><i class="lab la-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

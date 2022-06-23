@@ -1,0 +1,21 @@
+<section class="banner p-0 pos-r fullscreen-banner">
+    <div class="banner-slider owl-carousel no-pb" data-dots="false" data-nav="true">
+        <div 
+            *ngFor="let banner of banners"
+            class="item hero-overlay" [attr.data-bg-img]="'assets/images/bg/' + banner.imagen" data-overlay="6">
+            <div class="align-center pt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-10 col-12">
+                            <h1 class="mb-4 text-white">{{ banner.texto }}</h1>
+                            <div class="btn-box mt-5">
+                                <a class="btn btn-theme" href="{{ banner.btnUrl }}"> <span>{{ banner.btnTexto }}</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
